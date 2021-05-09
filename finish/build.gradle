@@ -70,6 +70,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0-rc1'
 
+
     // Import for CameraX
     def camerax_version = "1.0.0-beta10"
     // CameraX core library using camera2 implementation

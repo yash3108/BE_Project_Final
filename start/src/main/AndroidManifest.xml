@@ -12,6 +12,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -21,7 +31,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLClassify"
         tools:ignore="AllowBackup">
-        <activity android:name=".VideoSelector"></activity>
+        <activity android:name=".AlertActivity"></activity>
+        <activity android:name=".VideoSelector" />
         <activity android:name=".AlertActiviity" />
         <activity android:name=".FetchData" />
         <activity
@@ -29,7 +40,7 @@
             android:configChanges="orientation|screenSize"
             tools:ignore="Instantiatable" />
         <activity android:name=".Speechttext" />
-        <activity android:name=".PhotoCapture"></activity>
+        <activity android:name=".PhotoCapture" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,10 +49,5 @@
             </intent-filter>
         </activity>
     </application>
-    <queries>
-        <intent>
-            <action android:name="com.google.android.youtube.api.service.START" />
-        </intent>
-    </queries>
 
 </manifest>
